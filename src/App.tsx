@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router";
-import Home from "./pages/Home";
-import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import HomeLayout from "./pages/HomeLayout";
+import AboutLayout from "./pages/AboutLayout";
 
 function App() {
   return (
     <Routes>
-      <Route index element={<Home />} />
-      <Route path="about-us" element={<About />} />
+      <Route index element={<HomeLayout />} />
+      <Route path="about-us" element={<AboutLayout />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   );
